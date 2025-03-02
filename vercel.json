@@ -14,11 +14,11 @@
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "/server"
+        "dest": "/server/index.js"
       },
       {
         "src": "/(.*)",
-        "dest": "/client/$1"
+        "dest": "/client/dist/$1"
       }
     ]
   }

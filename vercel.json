@@ -5,10 +5,17 @@
         "destination": "/server/index.js"
       }
     ],
-    "routes": [
+    "builds": [
       {
-        "src": "/(.*)",
-        "dest": "/client/dist/index.html"
+        "src": "server/index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "client/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "client/dist"
+        }
       }
     ]
   }

@@ -1,0 +1,15 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "/server/index.js"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/client/dist/index.html"
+      }
+    ]
+  }
+  

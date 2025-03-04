@@ -13,6 +13,7 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "/server/index.js" },
+    { "src": "/(favicon\\.ico|favicon-16x16\\.png|favicon-32x32\\.png|apple-touch-icon\\.png|site.webmanifest)", "dest": "/client/public/$1" },
     { "src": "/(.*)", "dest": "/client/dist/index.html", "status": 200 }
   ]
 }
